@@ -1,12 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+  <!--   <div id="nav">
+    <router-link to="/search">Search</router-link> |
+    <router-link to="/"></router-link>
+  </div> -->
   <router-view />
 </template>
 
 <style>
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -17,6 +23,7 @@
 
 #nav {
   padding: 30px;
+  background-color: #70869c;
 }
 
 #nav a {
